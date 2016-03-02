@@ -4,6 +4,7 @@
 	<meta charset="utf-16" />
 	<title>Happeh Birfdai</title>
 	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="tipsy.css" />
 </head>
 <body>
 	<div id="main">
@@ -15,15 +16,7 @@
             <source src="audiokitty/birthday_en.mp3" type='audio/mpeg; codecs="mp3"'>
             <source src="audiokitty/birthday_en.ogg" type='audio/ogg; codecs="vorbis"'>
           </audio>
-          <p>happy birthday</p>
-      	</li>
-      	<li>
-          <img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
-          <audio id="german">
-            <source src="audiokitty/hppybday2_de.mp3" type='audio/mpeg; codecs="mp3"'>
-            <source src="audiokitty/hppybday2_de.ogg" type='audio/ogg; codecs="vorbis"'>
-          </audio>
-          <p>Herzlichen Glückwunsch zum Geburtstag</p>
+          <p class="lang-text" data-lang="english">happy birthday</p>
       	</li>
 				<li>
 					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
@@ -31,15 +24,23 @@
 						<source src="audiokitty/happybirthday_ru.mp3" type='audio/mpeg; codecs="mp3"'>
 						<source src="audiokitty/happybirthday_ru.ogg" type='audio/ogg; codecs="vorbis"'>
 					</audio>
-					<p>Поздравляю с днем рождения</p>
+					<p class="lang-text" data-lang="russian">Поздравляю с днем рождения</p>
 				</li>
+      	<li>
+          <img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
+          <audio id="german">
+            <source src="audiokitty/hppybday2_de.mp3" type='audio/mpeg; codecs="mp3"'>
+            <source src="audiokitty/hppybday2_de.ogg" type='audio/ogg; codecs="vorbis"'>
+          </audio>
+          <p class="lang-text" data-lang="german">Herzlichen Glückwunsch zum Geburtstag</p>
+      	</li>
 				<li>
 					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
 					<audio id="japanese">
 						<source src="audiokitty/hppybday_jp.mp3" type='audio/mpeg; codecs="mp3"'>
 						<source src="audiokitty/hppybday_jp.ogg" type='audio/ogg; codecs="vorbis"'>
 					</audio>
-					<p>お誕生日おめでとう</p>
+					<p class="lang-text" data-lang="japanese">お誕生日おめでとう</p>
 				</li>
 				<li>
 					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
@@ -47,15 +48,7 @@
 						<source src="audiokitty/hppybday_es.mp3" type='audio/mpeg; codecs="mp3"'>
 						<source src="audiokitty/hppybday_es.ogg" type='audio/ogg; codecs="vorbis"'>
 					</audio>
-					<p>Feliz cumpleaños</p>
-				</li>
-				<li>
-					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
-					<audio id="chinese">
-						<source src="audiokitty/hppybday_jp.mp3" type='audio/mpeg; codecs="mp3"'>
-						<source src="audiokitty/hppybday_jp.ogg" type='audio/ogg; codecs="vorbis"'>
-					</audio>
-					<p>生日快樂</p>
+					<p class="lang-text" data-lang="spanish">Feliz cumpleaños</p>
 				</li>
 				<li>
 					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
@@ -63,15 +56,14 @@
 						<source src="audiokitty/hppybday_fr.mp3" type='audio/mpeg; codecs="mp3"'>
 						<source src="audiokitty/hppybday_fr.ogg" type='audio/ogg; codecs="vorbis"'>
 					</audio>
-					<p>Joyeux Anniversaire</p>
+					<p class="lang-text" data-lang="french">Joyeux Anniversaire</p>
 				</li>
 				<li>
 					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
-					<audio id="italian">
-						<source src="audiokitty/hppybday_it.mp3" type='audio/mpeg; codecs="mp3"'>
-						<source src="audiokitty/hppybday_it.ogg" type='audio/ogg; codecs="vorbis"'>
+					<audio id="chinese">
+						<source src="audiokitty/birthday_mandarin.mp3" type='audio/mpeg; codecs="mp3"'>
 					</audio>
-					<p>Buon Compleanno</p>
+					<p class="lang-text" data-lang="chinese">生日快樂</p>
 				</li>
 				<li>
 					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
@@ -79,7 +71,15 @@
 						<source src="audiokitty/hppybday_pt-br.mp3" type='audio/mpeg; codecs="mp3"'>
 						<source src="audiokitty/hppybday_pt-br.ogg" type='audio/ogg; codecs="vorbis"'>
 					</audio>
-					<p>Feliz aniversário</p>
+					<p class="lang-text" data-lang="portugese">Feliz aniversário</p>
+				</li>
+				<li>
+					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
+					<audio id="italian">
+						<source src="audiokitty/hppybday_it.mp3" type='audio/mpeg; codecs="mp3"'>
+						<source src="audiokitty/hppybday_it.ogg" type='audio/ogg; codecs="vorbis"'>
+					</audio>
+					<p class="lang-text" data-lang="italian">Buon Compleanno</p>
 				</li>
 				<li>
 					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
@@ -87,15 +87,7 @@
 						<source src="audiokitty/birthday1_pl.mp3" type='audio/mpeg; codecs="mp3"'>
 						<source src="audiokitty/birthday1_pl.ogg" type='audio/ogg; codecs="vorbis"'>
 					</audio>
-					<p>Wszystkiego najlepszego z okazji urodzin</p>
-				</li>
-				<li>
-					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
-					<audio id="dutch">
-						<source src="audiokitty/happybirthday1_nl.mp3" type='audio/mpeg; codecs="mp3"'>
-						<source src="audiokitty/happybirthday1_nl.ogg" type='audio/ogg; codecs="vorbis"'>
-					</audio>
-					<p>Gefeliciteerd met je verjaardag</p>
+					<p class="lang-text" data-lang="polish">Wszystkiego najlepszego z okazji urodzin</p>
 				</li>
 				<li>
 					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
@@ -103,31 +95,29 @@
 						<source src="audiokitty/hppybday_tr.mp3" type='audio/mpeg; codecs="mp3"'>
 						<source src="audiokitty/hppybday_tr.ogg" type='audio/ogg; codecs="vorbis"'>
 					</audio>
-					<p>doğum günün kutlu olsun</p>
+					<p class="lang-text" data-lang="turkish">doğum günün kutlu olsun</p>
 				</li>
 				<li>
 					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
-					<audio id="sweedish">
-						<source src="audiokitty/hppybday_sv.mp3" type='audio/mpeg; codecs="mp3"'>
-						<source src="audiokitty/hppybday_sv.ogg" type='audio/ogg; codecs="vorbis"'>
+					<audio id="dutch">
+						<source src="audiokitty/happybirthday1_nl.mp3" type='audio/mpeg; codecs="mp3"'>
+						<source src="audiokitty/happybirthday1_nl.ogg" type='audio/ogg; codecs="vorbis"'>
 					</audio>
-					<p>Grattis på födelsedagen</p>
+					<p class="lang-text" data-lang="dutch">Gefeliciteerd met je verjaardag</p>
 				</li>
 				<li>
 					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
-					<audio id="czech">
-						<source src="audiokitty/happybirthday_cs.mp3" type='audio/mpeg; codecs="mp3"'>
-						<source src="audiokitty/happybirthday_cs.ogg" type='audio/ogg; codecs="vorbis"'>
+					<audio id="persian">
+						<source src="audiokitty/happybirthday_fa.mp3" type='audio/mpeg; codecs="mp3"'>
 					</audio>
-					<p>všechno nejlepší k narozeninám</p>
+					<p class="lang-text" data-lang="persian">تولدت مبارک</p>
 				</li>
 				<li>
 					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
-					<audio id="romanian">
-						<source src="audiokitty/hppybday_ro.mp3" type='audio/mpeg; codecs="mp3"'>
-						<source src="audiokitty/hppybday_ro.ogg" type='audio/ogg; codecs="vorbis"'>
+					<audio id="arabic">
+						<source src="audiokitty/birthday1_ar-eg.mp3" type='audio/mpeg; codecs="mp3"'>
 					</audio>
-					<p>La mulţi ani</p>
+					<p class="lang-text" data-lang="arabic">كل سنة و إنت طيّب</p>
 				</li>
 				<li>
 					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
@@ -135,31 +125,23 @@
 						<source src="audiokitty/birthday_kr.mp3" type='audio/mpeg; codecs="mp3"'>
 						<source src="audiokitty/birthday_kr.ogg" type='audio/ogg; codecs="vorbis"'>
 					</audio>
-					<p>생일축하합니다</p>
+					<p class="lang-text" data-lang="korean">생일축하합니다</p>
 				</li>
 				<li>
 					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
-					<audio id="greek">
-						<source src="audiokitty/birthday2_el.mp3" type='audio/mpeg; codecs="mp3"'>
-						<source src="audiokitty/birthday2_el.ogg" type='audio/ogg; codecs="vorbis"'>
+					<audio id="czech">
+						<source src="audiokitty/happybirthday_cs.mp3" type='audio/mpeg; codecs="mp3"'>
+						<source src="audiokitty/happybirthday_cs.ogg" type='audio/ogg; codecs="vorbis"'>
 					</audio>
-					<p>χαρούμενα γενέθλια</p>
+					<p class="lang-text" data-lang="czech">všechno nejlepší k narozeninám</p>
 				</li>
 				<li>
 					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
-					<audio id="hungarian">
-						<source src="audiokitty/hppybday_hu.mp3" type='audio/mpeg; codecs="mp3"'>
-						<source src="audiokitty/hppybday_hu.ogg" type='audio/ogg; codecs="vorbis"'>
+					<audio id="sweedish">
+						<source src="audiokitty/hppybday_sv.mp3" type='audio/mpeg; codecs="mp3"'>
+						<source src="audiokitty/hppybday_sv.ogg" type='audio/ogg; codecs="vorbis"'>
 					</audio>
-					<p>boldog születésnapot</p>
-				</li>
-				<li>
-					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
-					<audio id="thai">
-						<source src="audiokitty/happy_birthday.mp3" type='audio/mpeg; codecs="mp3"'>
-						<source src="audiokitty/happy_birthday.ogg" type='audio/ogg; codecs="vorbis"'>
-					</audio>
-					<p>สุขสันต์วันเกิด</p>
+					<p class="lang-text" data-lang="sweedish">Grattis på födelsedagen</p>
 				</li>
 				<li>
 					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
@@ -167,15 +149,7 @@
 						<source src="audiokitty/birthday_vi.mp3" type='audio/mpeg; codecs="mp3"'>
 						<source src="audiokitty/birthday_vi.ogg" type='audio/ogg; codecs="vorbis"'>
 					</audio>
-					<p>chúc mừng sinh nhật</p>
-				</li>
-				<li>
-					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
-					<audio id="danish">
-						<source src="audiokitty/birthday_dk.mp3" type='audio/mpeg; codecs="mp3"'>
-						<source src="audiokitty/birthday_dk.ogg" type='audio/ogg; codecs="vorbis"'>
-					</audio>
-					<p>tillykke med fødselsdagen</p>
+					<p class="lang-text" data-lang="vietnamese">chúc mừng sinh nhật</p>
 				</li>
 				<li>
 					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
@@ -183,7 +157,47 @@
 						<source src="audiokitty/hppybday_id.mp3" type='audio/mpeg; codecs="mp3"'>
 						<source src="audiokitty/hppybday_id.ogg" type='audio/ogg; codecs="vorbis"'>
 					</audio>
-					<p>selamat hari ulang tahun</p>
+					<p class="lang-text" data-lang="indonesian">selamat hari ulang tahun</p>
+				</li>
+				<li>
+					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
+					<audio id="greek">
+						<source src="audiokitty/birthday2_el.mp3" type='audio/mpeg; codecs="mp3"'>
+						<source src="audiokitty/birthday2_el.ogg" type='audio/ogg; codecs="vorbis"'>
+					</audio>
+					<p class="lang-text" data-lang="greek">χαρούμενα γενέθλια</p>
+				</li>
+				<li>
+					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
+					<audio id="romanian">
+						<source src="audiokitty/hppybday_ro.mp3" type='audio/mpeg; codecs="mp3"'>
+						<source src="audiokitty/hppybday_ro.ogg" type='audio/ogg; codecs="vorbis"'>
+					</audio>
+					<p class="lang-text" data-lang="romanian">La mulţi ani</p>
+				</li>
+				<li>
+					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
+					<audio id="hungarian">
+						<source src="audiokitty/hppybday_hu.mp3" type='audio/mpeg; codecs="mp3"'>
+						<source src="audiokitty/hppybday_hu.ogg" type='audio/ogg; codecs="vorbis"'>
+					</audio>
+					<p class="lang-text" data-lang="hungarian">boldog születésnapot</p>
+				</li>
+				<li>
+					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
+					<audio id="danish">
+						<source src="audiokitty/birthday_dk.mp3" type='audio/mpeg; codecs="mp3"'>
+						<source src="audiokitty/birthday_dk.ogg" type='audio/ogg; codecs="vorbis"'>
+					</audio>
+					<p class="lang-text" data-lang="danish">tillykke med fødselsdagen</p>
+				</li>
+				<li>
+					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
+					<audio id="thai">
+						<source src="audiokitty/happy_birthday.mp3" type='audio/mpeg; codecs="mp3"'>
+						<source src="audiokitty/happy_birthday.ogg" type='audio/ogg; codecs="vorbis"'>
+					</audio>
+					<p class="lang-text" data-lang="thai">สุขสันต์วันเกิด</p>
 				</li>
 				<li>
 					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
@@ -191,23 +205,7 @@
 						<source src="audiokitty/hppybday_fi.mp3" type='audio/mpeg; codecs="mp3"'>
 						<source src="audiokitty/hppybday_fi.ogg" type='audio/ogg; codecs="vorbis"'>
 					</audio>
-					<p>hyvää syntymäpäivää</p>
-				</li>
-				<li>
-					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
-					<audio id="norwegian">
-						<source src="audiokitty/birthday1_no.mp3" type='audio/mpeg; codecs="mp3"'>
-						<source src="audiokitty/birthday1_no.ogg" type='audio/ogg; codecs="vorbis"'>
-					</audio>
-					<p>gratulerer med dagen</p>
-				</li>
-				<li>
-					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
-					<audio id="bulgarian">
-						<source src="audiokitty/hppybday_bg.mp3" type='audio/mpeg; codecs="mp3"'>
-						<source src="audiokitty/hppybday_bg.ogg" type='audio/ogg; codecs="vorbis"'>
-					</audio>
-					<p>Честит рожден ден</p>
+					<p class="lang-text" data-lang="finnish">hyvää syntymäpäivää</p>
 				</li>
 				<li>
 					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
@@ -215,7 +213,23 @@
 						<source src="audiokitty/birthday1_sk.mp3" type='audio/mpeg; codecs="mp3"'>
 						<source src="audiokitty/birthday1_sk.ogg" type='audio/ogg; codecs="vorbis"'>
 					</audio>
-					<p>všetko najlepšie k narodeninám</p>
+					<p class="lang-text" data-lang="slovak">všetko najlepšie k narodeninám</p>
+				</li>
+				<li>
+					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
+					<audio id="bulgarian">
+						<source src="audiokitty/hppybday_bg.mp3" type='audio/mpeg; codecs="mp3"'>
+						<source src="audiokitty/hppybday_bg.ogg" type='audio/ogg; codecs="vorbis"'>
+					</audio>
+					<p class="lang-text" data-lang="bulgarian">Честит рожден ден</p>
+				</li>
+				<li>
+					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
+					<audio id="norwegian">
+						<source src="audiokitty/birthday1_no.mp3" type='audio/mpeg; codecs="mp3"'>
+						<source src="audiokitty/birthday1_no.ogg" type='audio/ogg; codecs="vorbis"'>
+					</audio>
+					<p class="lang-text" data-lang="norwegian">gratulerer med dagen</p>
 				</li>
 				<li>
 					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
@@ -223,15 +237,7 @@
 						<source src="audiokitty/hppybday_hb.mp3" type='audio/mpeg; codecs="mp3"'>
 						<source src="audiokitty/hppybday_hb.ogg" type='audio/ogg; codecs="vorbis"'>
 					</audio>
-					<p>יום הולדת שמח</p>
-				</li>
-				<li>
-					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
-					<audio id="croatian">
-						<source src="audiokitty/birthday_hr.mp3" type='audio/mpeg; codecs="mp3"'>
-						<source src="audiokitty/birthday_hr.ogg" type='audio/ogg; codecs="vorbis"'>
-					</audio>
-					<p>sretan rođendan</p>
+					<p class="lang-text" data-lang="hebrew">יום הולדת שמח</p>
 				</li>
 				<li>
 					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
@@ -239,34 +245,29 @@
 						<source src="audiokitty/birthday1_lt.mp3" type='audio/mpeg; codecs="mp3"'>
 						<source src="audiokitty/birthday1_lt.ogg" type='audio/ogg; codecs="vorbis"'>
 					</audio>
-					<p>su gimtadieniu</p>
+					<p class="lang-text" data-lang="lithuanian">su gimtadieniu</p>
 				</li>
-				<li>
-					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
-					<audio id="serbian">
-						<source src="audiokitty/birthday_sr.mp3" type='audio/mpeg; codecs="mp3"'>
-						<source src="audiokitty/birthday_sr.ogg" type='audio/ogg; codecs="vorbis"'>
-					</audio>
-					<p>срећан рођендан</p>
-				</li>
-				<li>
-					<img src="audiokitty/playButton.png" width="20" height="20" class="js-play-button">
-					<audio id="catalan">
-						<source src="audiokitty/birthday2_ca.mp3" type='audio/mpeg; codecs="mp3"'>
-						<source src="audiokitty/birthday2_ca.ogg" type='audio/ogg; codecs="vorbis"'>
-					</audio>
-					<p>Bon aniversari</p>
-				</li>
-			</ul>
 
-			<div id="footnote">Estimates of the percentages of Web sites using various content languages as of 30 December 2011. All other languages are used in less than 0.1% of websites (except Arabic and Farsi, apparenty they could not provide mp3s for these 2).</div>
+			<div id="footnote">
+				<a href="https://en.wikipedia.org/wiki/Languages_used_on_the_Internet#Content_languages_for_websites" target="_blank">Estimates of the percentages of Web sites using various content languages as of 18 March 2015.</a>
+			</div>
 			<div id="header">Happeh Birfdai</div>
 		</div>
 	</div>
 	<script src="jquery-1.12.1.min.js"></script>
+	<script src="jquery.tipsy.js"></script>
 	<script>
-		$('.js-play-button').click(function(){
-			$(this).next().get(0).play();
+		$(document).ready(function(){
+			$('.lang-text').tipsy({
+				gravity: 'n',
+				fade: true,
+				title: 'data-lang'
+			});
+		});
+		$(window).load(function(){
+			$('.js-play-button').click(function(){
+				$(this).next().get(0).play();
+			});
 		});
 	</script>
 </body>

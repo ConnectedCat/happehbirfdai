@@ -57,18 +57,16 @@ li p {
 	width: 400px;
 }
 
-a:link {color:#ffffff;
-		text-decoration: none;
-}     
-a:visited {color:#ffffff;
-		text-decoration: none;
-}  
-a:hover {color:#000000;
-		text-decoration: none;
-}  
-a:active {color:#000000;
-		text-decoration: none;
-}  
+a:link,
+a:visited {
+	color:#ffffff;
+	text-decoration: none;
+}
+a:hover,
+a:active {
+	color:#ffffff;
+	text-decoration: underline;
+}
 
 #main {
 	margin: auto;
@@ -79,5 +77,3 @@ a:active {color:#000000;
 	background: -webkit-linear-gradient(bottom, #F57344 34%, #00A9C7 100%);
 	background: -ms-linear-gradient(bottom, #F57344 34%, #00A9C7 100%);
 	}
-
-
